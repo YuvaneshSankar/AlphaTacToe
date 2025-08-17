@@ -2,8 +2,7 @@ import torch
 import torch.nn as nn
 
 # Import your component classes
-from neural_network_components.first_cov_layer import FirstConvLayer
-from neural_network_components.residual_block import ResidualBlock
+from neural_network_components.first_covl_layer import FirstConvLayer
 from neural_network_components.residual_tower import ResidualTower
 from neural_network_components.policy_head import PolicyHead
 from neural_network_components.value_head import ValueHead
