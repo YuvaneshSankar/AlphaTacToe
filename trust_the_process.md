@@ -11,4 +11,6 @@ First lets discuss about the neural newtork:
 ->Now lets talk about value head same 1*1 conv with 1 filter and stride=1. Batch normalization then relu then flatten it into 9 as we get the ouptut as 3*3*1 from the conv layer.Then a fully connected layer expecting (with say 50 hidden units) and a tanh activation function.
 
 
+!!!!!!!!!!I have completed the neural network arch
 
+so whats next lets start with the monteCarloTreeSearch
