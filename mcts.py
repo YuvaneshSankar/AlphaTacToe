@@ -130,6 +130,7 @@ class MCTS:
             current_state = state
             current_player = to_play
 
+
             # SELECT: Traverse tree until we reach a leaf
             while node.expanded():
                 action, node = node.select_child()
