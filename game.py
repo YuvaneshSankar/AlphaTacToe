@@ -83,6 +83,31 @@ class TicTacToeGame:
     def get_canonical_board(self, board, player):
         """
         From player's perspective: multiply by player.
-        So current player's pieces become +1, opponent’s become -1.
+        So current player's pieces become +1, opponent's become -1.
         """
         return player * board
+
+    def display_board(self, board):
+        """Display the board in a human-readable format"""
+        symbols = {1: 'X', -1: 'O', 0: '.'}
+        print("  0 1 2")
+        for i in range(3):
+            row_str = f"{i} "
+            for j in range(3):
+                row_str += symbols[board[i, j]] + " "
+            print(row_str)
+        print()
+
+    def action_to_coords(self, action):
+        """Convert action index to (row, col) coordinates"""
+        return divmod(action, self.cols)
+
+    def coords_to_action(self, row, col):
+        """Convert (row, col) coordinates to action index"""
+        return row * self.cols + col
+
+    def is_game_over(self, board):
+        """Check if the game is over"""
+        return (self.is_win(board, 1) or 
+                self.is_win(board, -1) or 
+                not self.has_legal_moves(board))
