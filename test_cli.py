@@ -1,6 +1,7 @@
 """
-Quick CLI test - automated demo
+Quick CLI test 
 """
+
 
 from game import TicTacToeGame
 from play import AlphaTacToePlayer
