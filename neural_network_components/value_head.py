@@ -24,3 +24,4 @@ class ValueHead(nn.Module):
         x = self.tanh(x)
         return x
 
+
