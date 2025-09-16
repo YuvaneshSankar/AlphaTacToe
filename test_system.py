@@ -2,6 +2,8 @@
 Quick test of the AlphaTacToe system
 """
 
+
+
 import torch
 import numpy as np
 from game import TicTacToeGame
